@@ -1,0 +1,21 @@
+@import "../../scss/variables";
+
+.page-title {
+  font-family: "TT Lakes Bold", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  padding-left: 16px;
+  background: no-repeat url("img/highlight.png");
+
+  @media (min-width: $tablet) {
+    padding-left: 24px;
+  }
+
+  @media (min-width: $pc) {
+    padding-left: 32px;
+    order: -1;
+    margin-right: auto;
+  }
+}

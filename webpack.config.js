@@ -39,7 +39,14 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
+          'resolve-url-loader',
+          {
+            loader: 'sass-loader', // compiles Sass to CSS, using Node Sass by default
+            options: {
+              sourceMap: true, // <-- !!IMPORTANT!!
+            }
+          },
+          //'sass-loader', // compiles Sass to CSS, using Node Sass by default
         ],
       },
 
@@ -67,7 +74,7 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
+      title: 'CPS | Услуги и сервисы',
       template: './src/index.html',
       inject: true,
       minify: {

@@ -1,9 +1,51 @@
-$bgColor: #24292e;
+@import "~@csstools/normalize.css";
+
+@import "src/blocks/page-title/page-title";
+@import "src/blocks/page-header/page-header";
+@import "src/blocks/slide-menu/slide-menu";
+@import "src/blocks/main-block/main-block";
+@import "src/blocks/article-preview/article-preview";
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Regular.woff') format('woff'),
+  url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Medium.woff') format('woff'),
+  url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Bold.woff') format('woff'),
+  url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+/*$bgColor: #24292e;
 $text: #fff;
 
 @font-face {
   font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  src: url('../../fonts/comic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -14,4 +56,4 @@ body {
   font-family: Comic, sans-serif;
   background-color: $bgColor;
   color: $text;
-}
+}*/

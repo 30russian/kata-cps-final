@@ -1,0 +1,14 @@
+@import "../../scss/variables";
+
+.main-block__slider {
+  margin-left: 16px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin-left: 24px;
+  }
+
+  @media (min-width: $pc) {
+    margin-left: 32px;
+  }
+}
