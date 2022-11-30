@@ -1,0 +1,28 @@
+.repairment-link {
+  display: flex;
+  padding: 16px;
+  width: 224px;
+  height: 160px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+}
+
+.repairment-link > h3 {
+  margin: 0;
+  align-self: flex-start;
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+}
+
+.repairment-link > a {
+  align-self: flex-end;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background: url("img/go.png");
+}

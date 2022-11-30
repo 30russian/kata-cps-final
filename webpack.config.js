@@ -50,6 +50,15 @@ module.exports = {
         ],
       },
 
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract css to separate file
+          'css-loader', // translates CSS into CommonJS
+          'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
+        ],
+      },
+
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,

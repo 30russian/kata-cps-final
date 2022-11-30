@@ -2,4 +2,6 @@
 
 import '../scss/style.scss'
 
-console.log('Works!')
+import * as Services from '../blocks/services/services'
+
+Services.initElems();

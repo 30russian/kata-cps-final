@@ -5,6 +5,9 @@
 @import "src/blocks/slide-menu/slide-menu";
 @import "src/blocks/main-block/main-block";
 @import "src/blocks/article-preview/article-preview";
+@import "src/blocks/brand-link/brand-link";
+@import "src/blocks/services/services";
+@import "src/blocks/repairment-link/repairment-link";
 
 @font-face {
   font-family: 'TT Lakes Regular';
@@ -36,8 +39,29 @@
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*$bgColor: #24292e;
