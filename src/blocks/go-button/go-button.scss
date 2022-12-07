@@ -1,0 +1,25 @@
+.go-button {
+  height: 32px;
+  background: #FF3E79;
+  border: none;
+  border-radius: 16px;
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  padding: 0 40px 0 20px;
+
+  &::after {
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    content: "";
+    background: url("img/go-button.png");
+    top: 11px;
+    margin-left: 17px;
+  }
+}

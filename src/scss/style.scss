@@ -8,6 +8,9 @@
 @import "src/blocks/brand-link/brand-link";
 @import "src/blocks/services/services";
 @import "src/blocks/repairment-link/repairment-link";
+@import "src/blocks/section-title/section-title";
+@import "src/blocks/go-button/go-button";
+@import "src/blocks/prices/prices";
 
 @font-face {
   font-family: 'TT Lakes Regular';
@@ -49,6 +52,7 @@ html {
 
 body {
   margin: 0;
+  background: #F8F8F8;
 }
 
 .visually-hidden {

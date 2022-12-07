@@ -106,7 +106,7 @@
         <img class="article-preview__illustration" src="img/_MG_3223.jpg" alt="Фотография офиса"/>
       </section>
       <section class="services">
-        <h2 class="services__title">Ремонт техники различных брендов</h2>
+        <h2 class="section-title">Ремонт техники различных брендов</h2>
         <div class="services__list-wrapper">
           <ul class="services__list">
             <li class="services__list-slide">
@@ -185,7 +185,7 @@
         </div>
       </section>
       <section class="services">
-        <h2 class="services__title">Ремонт различных видов техники</h2>
+        <h2 class="section-title">Ремонт различных видов техники</h2>
         <div class="services__list-wrapper">
           <ul class="services__list">
             <li class="services__list-slide">
@@ -232,6 +232,47 @@
           </label>
           <div class="swiper-pagination"></div>
         </div>
+      </section>
+      <section class="prices">
+        <h2 class="section-title">Цены на услуги</h2>
+        <table class='prices__table'>
+          <thead>
+            <tr>
+              <th class="prices__table-header">Ремонтные услуги</th>
+              <th class="prices__table-header">Цена</th>
+              <th class="prices__table-header">Срок</th>
+              <th class="prices__table-header"></th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr class="prices__table-row">
+            <td class='prices__table-cell'>Диагностика</td>
+            <td class='prices__table-cell'>Бесплатно</td>
+            <td class='prices__table-cell'>30 мин</td>
+            <td class='prices__table-cell'>
+              <button type='button' class='go-button'>Заказать</button>
+            </td>
+          </tr>
+          <tr class="prices__table-row">
+            <td class='prices__table-cell'>Тестирование с выдачей технического заключения</td>
+            <td class='prices__table-cell'>Бесплатно</td>
+            <td class='prices__table-cell'>30 мин</td>
+            <td class='prices__table-cell'>
+              <button type='button' class='go-button'>Заказать</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <template id="prices__table-row-template">
+          <tr class="prices__table-row">
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'>
+              <button type='button' class='go-button'>Заказать</button>
+            </td>
+          </tr>
+        </template>
       </section>
     </main>
   </body>
