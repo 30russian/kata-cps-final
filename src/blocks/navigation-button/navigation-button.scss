@@ -1,0 +1,16 @@
+.navigation-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 0;
+  transition: box-shadow 0.5s ease,
+  transform 0.2s ease;
+}
+
+.navigation-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2px 0 black;
+}

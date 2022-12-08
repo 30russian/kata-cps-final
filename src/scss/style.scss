@@ -12,6 +12,10 @@
 @import "src/blocks/go-button/go-button";
 @import "src/blocks/prices/prices";
 @import "src/blocks/price-item/price-item";
+@import "src/blocks/sidebar/sidebar";
+@import "src/blocks/navigation-button/navigation-button";
+@import "src/blocks/navigation-link/navigation-link";
+@import "variables";
 @import "swiper";
 
 @font-face {
@@ -55,6 +59,19 @@ html {
 body {
   margin: 0;
   background: #F8F8F8;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax($tablet * 0.8, $tablet);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: minmax($tablet, auto);
+  }
+
+  @media (min-width: $pc) {
+    grid-template-columns: auto minmax($pc - $sidebarWidth, auto);
+  }
 }
 
 .visually-hidden {
