@@ -1,7 +1,5 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
-import 'swiper/swiper-bundle.css';
-
 const serviceListWrappers = [];
 const serviceLists = [];
 const serviceListSlides = [];
@@ -55,14 +53,14 @@ function toggleSwiper(currentState) {
   }
 
   if (!init) {
-    swiper = new Swiper(".swiper", {
+    swiper = new Swiper(".services .swiper", {
       modules: [Navigation, Pagination],
       direction: "horizontal",
       slidesPerView: "auto",
       centeredSlides: true,
       spaceBetween: 32,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".services .swiper-pagination",
         clickable: true,
       },
     });

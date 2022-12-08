@@ -1,0 +1,35 @@
+.price-item {
+  padding: 16px;
+  width: 260px;
+  height: 200px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+}
+
+.price-item > div:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.price-item h3 {
+  margin: 0 0 4px;
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+}
+
+.price-item span {
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+}
+
+.price-item__footer {
+  display: flex;
+  justify-content: space-between;
+}

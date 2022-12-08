@@ -245,22 +245,7 @@
             </tr>
           </thead>
           <tbody>
-          <tr class="prices__table-row">
-            <td class='prices__table-cell'>Диагностика</td>
-            <td class='prices__table-cell'>Бесплатно</td>
-            <td class='prices__table-cell'>30 мин</td>
-            <td class='prices__table-cell'>
-              <button type='button' class='go-button'>Заказать</button>
-            </td>
-          </tr>
-          <tr class="prices__table-row">
-            <td class='prices__table-cell'>Тестирование с выдачей технического заключения</td>
-            <td class='prices__table-cell'>Бесплатно</td>
-            <td class='prices__table-cell'>30 мин</td>
-            <td class='prices__table-cell'>
-              <button type='button' class='go-button'>Заказать</button>
-            </td>
-          </tr>
+
           </tbody>
         </table>
         <template id="prices__table-row-template">
@@ -272,6 +257,33 @@
               <button type='button' class='go-button'>Заказать</button>
             </td>
           </tr>
+        </template>
+        <div class="prices__list-wrapper swiper">
+          <ul class="prices__list swiper-wrapper">
+
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <template id='prices__list-slide-template'>
+          <li class="prices__list-slide swiper-slide">
+            <div class="price-item">
+              <div>
+                <h3>Ремонтные услуги</h3>
+                <span></span>
+              </div>
+              <div>
+                <h3>Цена</h3>
+                <span></span>
+              </div>
+              <div class='price-item__footer'>
+                <div>
+                  <h3>Срок</h3>
+                  <span></span>
+                </div>
+                <button type='button' class='go-button'>Заказать</button>
+              </div>
+            </div>
+          </li>
         </template>
       </section>
     </main>

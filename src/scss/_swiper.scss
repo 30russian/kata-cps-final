@@ -1,0 +1,30 @@
+@import "variables";
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .swiper {
+    height: auto;
+    background: #F2F2F2;
+    padding: 16px;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 8px;
+  }
+
+  .swiper-slide {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    display: block;
+    position: static;
+  }
+}
