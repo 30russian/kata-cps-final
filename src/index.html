@@ -17,7 +17,7 @@
     <div class="sidebar">
       <nav class="sidebar__navigation">
         <ul class="sidebar__navigation-list">
-          <li class="sidebar__navigation-item">
+          <li class="sidebar__navigation-item close-button">
             <button type="button" aria-label="Закрыть меню" class="navigation-button">
               <img src="img/close.png" alt="Закрыть меню">
             </button>
@@ -384,6 +384,32 @@
           </template>
         </section>
       </main>
+    </div>
+    <div class='blur-overlay'></div>
+    <div class='modal-form'>
+      <button type="button" aria-label="Закрыть меню" class="navigation-button close-button">
+        <img src="img/close.png" alt="Закрыть меню">
+      </button>
+      <h2 class="page-title">Обратная связь</h2>
+      <form action='/feedback'>
+        <input type="text" placeholder="Имя">
+        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон">
+        <input type="email" placeholder="Электронная почта">
+        <textarea rows="5" cols="60" name="text" placeholder="Сообщение"></textarea>
+      </form>
+      <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
+      <button type='button' class='go-button'>Отправить</button>
+    </div>
+    <div class='modal-form'>
+      <button type="button" aria-label="Закрыть меню" class="navigation-button close-button">
+        <img src="img/close.png" alt="Закрыть меню">
+      </button>
+      <h2 class="page-title">Заказать звонок</h2>
+      <form action='/callme'>
+        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон">
+      </form>
+      <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
+      <button type='button' class='go-button'>Отправить</button>
     </div>
   </div>
   </body>

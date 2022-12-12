@@ -3,7 +3,7 @@
 .sidebar {
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: $sidebarZIndex;
   background: white;
   flex-direction: column;
   width: 100vw;
@@ -126,7 +126,7 @@
   margin: 0;
 
   @media (min-width: $pc) {
-    &:first-child {
+    &.close-button {
       display: none;
     }
   }
