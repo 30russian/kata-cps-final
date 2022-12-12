@@ -21,10 +21,10 @@ Prices.initElemsWith([
 PageHeader.addMenuButtonHandler(Sidebar.show);
 
 ModalForm.initElems();
-ModalForm.addOpener(Sidebar.callButton, ModalForm.modalForms[0]);
-ModalForm.addOpener(Sidebar.chatButton, ModalForm.modalForms[1]);
-ModalForm.addOpener(PageHeader.callButton, ModalForm.modalForms[0]);
-ModalForm.addOpener(PageHeader.chatButton, ModalForm.modalForms[1]);
+ModalForm.addOpener(Sidebar.callButton, ModalForm.modalForms[1]);
+ModalForm.addOpener(Sidebar.chatButton, ModalForm.modalForms[0]);
+ModalForm.addOpener(PageHeader.callButton, ModalForm.modalForms[1]);
+ModalForm.addOpener(PageHeader.chatButton, ModalForm.modalForms[0]);
 ModalForm.onChangeState(BlurOverlay.setShown);
 
 Sidebar.onChangeState(BlurOverlay.setShown);
