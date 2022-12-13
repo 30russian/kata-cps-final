@@ -1,9 +1,13 @@
-$tablet: 320px;
-$pc: 768px;
+$phone: 320px;
+$tablet: 768px;
+$pc: 1366px;
 
 $sidebarWidth: 320px;
+$sidebarMaxWidth: 480px;
 $sidebarZIndex: 20;
 
+$modalFormWidth: 440px;
+$modalFormMaxWidth: 480px;
 $modalFormZIndex: 30;
 
 $blurZIndex: 10;

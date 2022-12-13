@@ -65,7 +65,7 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax($tablet * 0.8, $tablet);
+  grid-template-columns: minmax($phone, $tablet);
 
   @media (min-width: $tablet) {
     grid-template-columns: minmax($tablet, auto);

@@ -10,8 +10,7 @@ function initSwiper() {
   new Swiper(".prices .swiper", {
     modules: [Navigation, Pagination],
     direction: "horizontal",
-    slidesPerView: "auto",
-    centeredSlides: true,
+    slidesPerView: 1.2,
     spaceBetween: 32,
     pagination: {
       el: ".prices .swiper-pagination",

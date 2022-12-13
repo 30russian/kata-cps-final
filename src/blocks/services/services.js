@@ -56,8 +56,7 @@ function toggleSwiper(currentState) {
     swiper = new Swiper(".services .swiper", {
       modules: [Navigation, Pagination],
       direction: "horizontal",
-      slidesPerView: "auto",
-      centeredSlides: true,
+      slidesPerView: 1.3,
       spaceBetween: 32,
       pagination: {
         el: ".services .swiper-pagination",
@@ -78,7 +77,7 @@ function toggleSwiper(currentState) {
 }
 
 function shouldToggleSwiper() {
-  if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 768) {
     if (!init) {
       toggleSwiper(init);
     }

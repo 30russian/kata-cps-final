@@ -6,26 +6,36 @@
   z-index: $sidebarZIndex;
   background: white;
   flex-direction: column;
-  width: 100vw;
+  width: $sidebarWidth;
   height: 100%;
-  left: -380px;
-  transition: transform 0.5s ease;
+  left: -100vw;
+  transition: left 0.5s ease;
 
-  &--opened {
-    transform: translateX(380px);
+  @media (min-width: $sidebarMaxWidth) and (max-width: $tablet) {
+    left: -$sidebarMaxWidth;
   }
 
   @media (min-width: $tablet) and (max-width: $pc) {
-    width: $sidebarWidth;
+    $shiftLeft: $sidebarWidth + 60px;
+    left: -$shiftLeft;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
                 16px 0 52px rgba(14, 24, 80, 0.2);
   }
 
   @media (min-width: $pc) {
-    width: $sidebarWidth;
     transform: none;
     transition: none;
     position: static;
+  }
+
+  &--opened {
+    width: 100vw;
+    max-width: $sidebarMaxWidth;
+    left: 0;
+
+    @media (min-width: $tablet) {
+      width: $sidebarWidth;
+    }
   }
 }
 
