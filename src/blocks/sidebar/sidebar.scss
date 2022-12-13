@@ -1,11 +1,9 @@
 @import "../../scss/variables";
 
 .sidebar {
-  display: flex;
   position: fixed;
   z-index: $sidebarZIndex;
   background: white;
-  flex-direction: column;
   width: $sidebarWidth;
   height: 100%;
   left: -100vw;
@@ -36,6 +34,16 @@
     @media (min-width: $tablet) {
       width: $sidebarWidth;
     }
+  }
+}
+
+.sidebar__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: $tablet) {
+    height: 100vh;
   }
 }
 

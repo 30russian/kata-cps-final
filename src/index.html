@@ -15,62 +15,63 @@
   <body>
   <div class='layout'>
     <div class="sidebar">
-      <nav class="sidebar__navigation">
-        <ul class="sidebar__navigation-list">
-          <li class="sidebar__navigation-item close-button">
-            <button type="button" aria-label="Закрыть меню" class="navigation-button">
-              <img src="img/close.png" alt="Закрыть меню">
-            </button>
-          </li>
-          <li class="sidebar__navigation-item sidebar__navigation-item--shift">
-            <a aria-label="Перейти на главную" href="/" class="navigation-link">
-              <img src="img/logo.svg" alt="Логотип">
-            </a>
-          </li>
-          <li class="sidebar__navigation-item">
-            <button type="button" aria-label="Поиск" class="navigation-button">
-              <img src="img/search.png" alt="Поиск">
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <nav class="sidebar__main-menu">
-        <ul  class="sidebar__main-menu-items-list">
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_1" checked>
-            <label for="sidebar-menu-choose_1">Ремонт техники</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_2">
-            <label for="sidebar-menu-choose_2">Услуги и сервисы</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_3">
-            <label for="sidebar-menu-choose_3">Корпоративным клиентам</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_4">
-            <label for="sidebar-menu-choose_4">Продавцам техники</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_5">
-            <label for="sidebar-menu-choose_5">Партнёрам</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_6">
-            <label for="sidebar-menu-choose_6">Производителям</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_7">
-            <label for="sidebar-menu-choose_7">Наши сервисные центры</label>
-          </li>
-          <li class="sidebar__main-menu-item">
-            <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_8">
-            <label for="sidebar-menu-choose_8">Контакты</label>
-          </li>
-        </ul>
-      </nav>
-      <div class="sidebar__footer">
+      <div class='sidebar__wrapper'>
+        <nav class="sidebar__navigation">
+          <ul class="sidebar__navigation-list">
+            <li class="sidebar__navigation-item close-button">
+              <button type="button" aria-label="Закрыть меню" class="navigation-button">
+                <img src="img/close.png" alt="Закрыть меню">
+              </button>
+            </li>
+            <li class="sidebar__navigation-item sidebar__navigation-item--shift">
+              <a aria-label="Перейти на главную" href="/" class="navigation-link">
+                <img src="img/logo.svg" alt="Логотип">
+              </a>
+            </li>
+            <li class="sidebar__navigation-item">
+              <button type="button" aria-label="Поиск" class="navigation-button">
+                <img src="img/search.png" alt="Поиск">
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidebar__main-menu">
+          <ul  class="sidebar__main-menu-items-list">
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_1" checked>
+              <label for="sidebar-menu-choose_1">Ремонт техники</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_2">
+              <label for="sidebar-menu-choose_2">Услуги и сервисы</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_3">
+              <label for="sidebar-menu-choose_3">Корпоративным клиентам</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_4">
+              <label for="sidebar-menu-choose_4">Продавцам техники</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_5">
+              <label for="sidebar-menu-choose_5">Партнёрам</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_6">
+              <label for="sidebar-menu-choose_6">Производителям</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_7">
+              <label for="sidebar-menu-choose_7">Наши сервисные центры</label>
+            </li>
+            <li class="sidebar__main-menu-item">
+              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_8">
+              <label for="sidebar-menu-choose_8">Контакты</label>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__footer">
         <nav class="sidebar__navigation">
           <ul class="sidebar__navigation-list">
             <li class="sidebar__navigation-item">
@@ -107,6 +108,7 @@
             <label for="sidebar-footer-language-choose_3">CH</label>
           </div>
         </div>
+      </div>
       </div>
     </div>
     <div>
