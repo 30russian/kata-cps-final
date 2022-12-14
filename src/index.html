@@ -401,10 +401,14 @@
       </button>
       <h2 class="page-title">Обратная связь</h2>
       <form action='/feedback'>
-        <input type="text" placeholder="Имя">
-        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон">
-        <input type="email" placeholder="Электронная почта">
-        <textarea rows="5" cols="60" name="text" placeholder="Сообщение"></textarea>
+        <input type="text" placeholder="Имя" id='feedback-form-name-field'>
+        <label for="feedback-form-name-field" class='visually-hidden'>Введите имя</label>
+        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" id='feedback-form-phone-field'>
+        <label for="feedback-form-phone-field" class='visually-hidden'>Введите телефон</label>
+        <input type="email" placeholder="Электронная почта" id='feedback-form-email-field'>
+        <label for="feedback-form-email-field" class='visually-hidden'>Введите электронную почту</label>
+        <textarea rows="5" cols="60" name="text" placeholder="Сообщение" id='feedback-form-message-field'></textarea>
+        <label for="feedback-form-message-field" class='visually-hidden'>Напишите сообщение</label>
       </form>
       <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
       <button type='button' class='go-button'>Отправить</button>
@@ -415,7 +419,8 @@
       </button>
       <h2 class="page-title">Заказать звонок</h2>
       <form action='/callme'>
-        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон">
+        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" id='call-me-form-phone-field'>
+        <label for="call-me-form-phone-field" class='visually-hidden'>Введите номер телефона</label>
       </form>
       <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
       <button type='button' class='go-button'>Отправить</button>
