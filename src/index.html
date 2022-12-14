@@ -1,430 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="cps, услуги, сервисы">
-    <meta name="description" content="Авторизованный сервисный центр по ремонту техники Dell">
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta
+    name='viewport'
+    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+  />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <meta name='keywords' content='cps, услуги, сервисы'>
+  <meta name='description' content='Авторизованный сервисный центр по ремонту техники Dell'>
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-  <div class='layout'>
-    <div class="sidebar">
-      <div class='sidebar__wrapper'>
-        <nav class="sidebar__navigation">
-          <ul class="sidebar__navigation-list">
-            <li class="sidebar__navigation-item close-button">
-              <button type="button" aria-label="Закрыть меню" class="navigation-button">
-                <img src="img/close.png" alt="Закрыть меню">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class='layout'>
+  <div class='sidebar'>
+    <div class='sidebar__wrapper'>
+      <nav class='sidebar__navigation'>
+        <ul class='sidebar__navigation-list'>
+          <li class='sidebar__navigation-item close-button'>
+            <button type='button' aria-label='Закрыть меню' class='navigation-button'>
+              <img src='img/close.png' alt='Закрыть меню'>
+            </button>
+          </li>
+          <li class='sidebar__navigation-item sidebar__navigation-item--shift'>
+            <a aria-label='Перейти на главную' href='/' class='navigation-link'>
+              <img src='img/logo.svg' alt='Логотип'>
+            </a>
+          </li>
+          <li class='sidebar__navigation-item'>
+            <button type='button' aria-label='Поиск' class='navigation-button'>
+              <img src='img/search.png' alt='Поиск'>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class='sidebar__main-menu'>
+        <ul class='sidebar__main-menu-items-list'>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_1' checked>
+            <label for='sidebar-menu-choose_1'>Ремонт техники</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_2'>
+            <label for='sidebar-menu-choose_2'>Услуги и сервисы</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_3'>
+            <label for='sidebar-menu-choose_3'>Корпоративным клиентам</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_4'>
+            <label for='sidebar-menu-choose_4'>Продавцам техники</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_5'>
+            <label for='sidebar-menu-choose_5'>Партнёрам</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_6'>
+            <label for='sidebar-menu-choose_6'>Производителям</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_7'>
+            <label for='sidebar-menu-choose_7'>Наши сервисные центры</label>
+          </li>
+          <li class='sidebar__main-menu-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-menu-choose' id='sidebar-menu-choose_8'>
+            <label for='sidebar-menu-choose_8'>Контакты</label>
+          </li>
+        </ul>
+      </nav>
+      <div class='sidebar__footer'>
+        <nav class='sidebar__navigation'>
+          <ul class='sidebar__navigation-list'>
+            <li class='sidebar__navigation-item'>
+              <button type='button' aria-label='Позвонить' class='navigation-button'>
+                <img src='img/call.png' alt='Позвонить'>
               </button>
             </li>
-            <li class="sidebar__navigation-item sidebar__navigation-item--shift">
-              <a aria-label="Перейти на главную" href="/" class="navigation-link">
-                <img src="img/logo.svg" alt="Логотип">
-              </a>
+            <li class='sidebar__navigation-item'>
+              <button type='button' aria-label='Открыть чат' class='navigation-button'>
+                <img src='img/chat.png' alt='Открыть чат'>
+              </button>
             </li>
-            <li class="sidebar__navigation-item">
-              <button type="button" aria-label="Поиск" class="navigation-button">
-                <img src="img/search.png" alt="Поиск">
+            <li class='sidebar__navigation-item sidebar__navigation-item--shift'>
+              <button type='button' aria-label='Открыть страницу профиля' class='navigation-button'>
+                <img src='img/profile.png' alt='Открыть страницу профиля'>
               </button>
             </li>
           </ul>
         </nav>
-        <nav class="sidebar__main-menu">
-          <ul  class="sidebar__main-menu-items-list">
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_1" checked>
-              <label for="sidebar-menu-choose_1">Ремонт техники</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_2">
-              <label for="sidebar-menu-choose_2">Услуги и сервисы</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_3">
-              <label for="sidebar-menu-choose_3">Корпоративным клиентам</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_4">
-              <label for="sidebar-menu-choose_4">Продавцам техники</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_5">
-              <label for="sidebar-menu-choose_5">Партнёрам</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_6">
-              <label for="sidebar-menu-choose_6">Производителям</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_7">
-              <label for="sidebar-menu-choose_7">Наши сервисные центры</label>
-            </li>
-            <li class="sidebar__main-menu-item">
-              <input type="radio" class="visually-hidden" name="sidebar-menu-choose" id="sidebar-menu-choose_8">
-              <label for="sidebar-menu-choose_8">Контакты</label>
-            </li>
-          </ul>
-        </nav>
-        <div class="sidebar__footer">
-        <nav class="sidebar__navigation">
-          <ul class="sidebar__navigation-list">
-            <li class="sidebar__navigation-item">
-              <button type="button" aria-label="Позвонить" class="navigation-button">
-                <img src="img/call.png" alt="Позвонить">
-              </button>
-            </li>
-            <li class="sidebar__navigation-item">
-              <button type="button" aria-label="Открыть чат" class="navigation-button">
-                <img src="img/chat.png" alt="Открыть чат">
-              </button>
-            </li>
-            <li class="sidebar__navigation-item sidebar__navigation-item--shift">
-              <button type="button" aria-label="Открыть страницу профиля" class="navigation-button">
-                <img src="img/profile.png" alt="Открыть страницу профиля">
-              </button>
-            </li>
-          </ul>
-        </nav>
-        <a aria-label="Отправить письмо" href="mailto:mail@cps.com" class="sidebar__footer-mail">mail@cps.com</a>
-        <a aria-label="Позвонить" href="tel:88008908900" class="sidebar__footer-phone">8 800 890 8900</a>
-        <div class="sidebar__footer-language-list">
-          <div class="sidebar__footer-language-list-item">
-            <input type="radio" class="visually-hidden" name="sidebar-lang-choose" id="sidebar-footer-language-choose_1"
+        <a aria-label='Отправить письмо' href='mailto:mail@cps.com' class='sidebar__footer-mail'>mail@cps.com</a>
+        <a aria-label='Позвонить' href='tel:88008908900' class='sidebar__footer-phone'>8 800 890 8900</a>
+        <div class='sidebar__footer-language-list'>
+          <div class='sidebar__footer-language-list-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-lang-choose' id='sidebar-footer-language-choose_1'
                    checked>
-            <label for="sidebar-footer-language-choose_1">RU</label>
+            <label for='sidebar-footer-language-choose_1'>RU</label>
           </div>
-          <div class="sidebar__footer-language-list-item">
-            <input type="radio" class="visually-hidden" name="sidebar-lang-choose" id="sidebar-footer-language-choose_2">
-            <label for="sidebar-footer-language-choose_2">EN</label>
+          <div class='sidebar__footer-language-list-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-lang-choose'
+                   id='sidebar-footer-language-choose_2'>
+            <label for='sidebar-footer-language-choose_2'>EN</label>
           </div>
-          <div class="sidebar__footer-language-list-item">
-            <input type="radio" class="visually-hidden" name="sidebar-lang-choose" id="sidebar-footer-language-choose_3">
-            <label for="sidebar-footer-language-choose_3">CH</label>
+          <div class='sidebar__footer-language-list-item'>
+            <input type='radio' class='visually-hidden' name='sidebar-lang-choose'
+                   id='sidebar-footer-language-choose_3'>
+            <label for='sidebar-footer-language-choose_3'>CH</label>
           </div>
         </div>
       </div>
-      </div>
-    </div>
-    <div>
-      <header class="page-header">
-        <nav class="page-header__navigation">
-          <ul class="page-header__navigation-list">
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Открыть меню" href="#" class="page-header__navigation-list-link">
-                <img src="img/burger.png" alt="Меню">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-divider page-header__navigation-list-item"></li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Перейти на главную" href="#" class="page-header__navigation-list-link">
-                <img src="img/logo.svg" alt="Логотип">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Позвонить" href="#" class="page-header__navigation-list-link">
-                <img src="img/call.png" alt="Позвонить">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Открыть чат" href="#" class="page-header__navigation-list-link">
-                <img src="img/chat.png" alt="Чат">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Открыть страницу профиля" href="#" class="page-header__navigation-list-link">
-                <img src="img/profile.png" alt="Профиль">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-divider page-header__navigation-list-item"></li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Оставить заявку" href="#" class="page-header__navigation-list-link">
-                <span>Оставить заявку</span>
-                <img src="img/repair.png" alt="Оставить заявку">
-              </a>
-            </li>
-            <li class="page-header__navigation-list-item">
-              <a aria-label="Узнать статус ремонта" href="#" class="page-header__navigation-list-link">
-                <span>Статус ремонта</span>
-                <img src="img/status.png" alt="Статус ремонта">
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="page-title">Услуги и сервисы</h1>
-      </header>
-      <main class="main-block">
-        <nav class="slide-menu main-block__slider">
-          <div class="slide-menu__list">
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_1" checked>
-              <label for="input_radio_1">Ремонтируемые устройства</label>
-            </div>
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_2">
-              <label for="input_radio_2">Дополнительные услуги</label>
-            </div>
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_3">
-              <label for="input_radio_3">Цены на услуги</label>
-            </div>
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_4">
-              <label for="input_radio_4">Адреса сервисных центров</label>
-            </div>
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_5">
-              <label for="input_radio_5">Специальные цены</label>
-            </div>
-            <div class="slide-menu__item">
-              <input type="radio" name="slide-menu-choose" id="input_radio_6">
-              <label for="input_radio_6">Отзывы</label>
-            </div>
-          </div>
-        </nav>
-        <section class="article-preview">
-          <article class="article-preview__short-content">
-            <div class="article-preview__description">
-              <p>
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
-                свой ноутбук Dell с официальной гарантией производителя.
-              </p>
-              <p>
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество
-                постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-                родным и близким.
-              </p>
-            </div>
-            <a aria-label="Читать далее" href="#" class="article-preview__full-link">Читать далее</a>
-          </article>
-          <img class="article-preview__illustration" src="img/_MG_3223.jpg" alt="Фотография офиса"/>
-        </section>
-        <section class="services">
-          <h2 class="section-title">Ремонт техники различных брендов</h2>
-          <div class="services__list-wrapper">
-            <ul class="services__list">
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/lenovo.png" alt="Lenovo"/>
-                  <a aria-label="Открыть Lenovo" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/samsung.png" alt="Samsung"/>
-                  <a aria-label="Открыть Samsung" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/apple.png" alt="Apple"/>
-                  <a aria-label="Открыть Apple" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/viewsonic.png" alt="Lenovo"/>
-                  <a aria-label="Открыть ViewSonic" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/bosch.png" alt="Bosch"/>
-                  <a aria-label="Открыть Bosch" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/hp.png" alt="HP"/>
-                  <a aria-label="Открыть HP" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/acer.png" alt="Acer"/>
-                  <a aria-label="Открыть Acer" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/sony.png" alt="Sony"/>
-                  <a aria-label="Открыть Sony" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/lenovo.png" alt="Lenovo"/>
-                  <a aria-label="Открыть Lenovo" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/samsung.png" alt="Samsung"/>
-                  <a aria-label="Открыть Samsung" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="brand-link">
-                  <img src="img/logos/apple.png" alt="Apple"/>
-                  <a aria-label="Открыть Apple" href="#"></a>
-                </div>
-              </li>
-            </ul>
-            <label class="services__list-expander">
-              <input type="checkbox" class="visually-hidden">
-              <span></span>
-              Показать все
-            </label>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
-        <section class="services">
-          <h2 class="section-title">Ремонт различных видов техники</h2>
-          <div class="services__list-wrapper">
-            <ul class="services__list">
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт ноутбуков</h3>
-                  <a aria-label="Открыть ремонт ноутбуков" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт планшетов</h3>
-                  <a aria-label="Открыть ремонт планшетов" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт ПК</h3>
-                  <a aria-label="Открыть ремонт ПК" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт мониторов</h3>
-                  <a aria-label="Открыть ремонт мониторов" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт смартфонов</h3>
-                  <a aria-label="Открыть ремонт смартфонов" href="#"></a>
-                </div>
-              </li>
-              <li class="services__list-slide">
-                <div class="repairment-link">
-                  <h3>Ремонт телевизоров</h3>
-                  <a aria-label="Открыть ремонт телевизоров" href="#"></a>
-                </div>
-              </li>
-            </ul>
-            <label class="services__list-expander">
-              <input type="checkbox" class="visually-hidden">
-              <span></span>
-              Показать все
-            </label>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
-        <section class="prices">
-          <h2 class="section-title">Цены на услуги</h2>
-          <table class='prices__table'>
-            <thead>
-              <tr>
-                <th class="prices__table-header">Ремонтные услуги</th>
-                <th class="prices__table-header">Цена</th>
-                <th class="prices__table-header">Срок</th>
-                <th class="prices__table-header"></th>
-              </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
-          <template id="prices__table-row-template">
-            <tr class="prices__table-row">
-              <td class='prices__table-cell'></td>
-              <td class='prices__table-cell'></td>
-              <td class='prices__table-cell'></td>
-              <td class='prices__table-cell'>
-                <button type='button' class='go-button'>Заказать</button>
-              </td>
-            </tr>
-          </template>
-          <div class="prices__list-wrapper swiper">
-            <ul class="prices__list swiper-wrapper">
-
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
-          <template id='prices__list-slide-template'>
-            <li class="prices__list-slide swiper-slide">
-              <div class="price-item">
-                <div>
-                  <h3>Ремонтные услуги</h3>
-                  <span></span>
-                </div>
-                <div>
-                  <h3>Цена</h3>
-                  <span></span>
-                </div>
-                <div class='price-item__footer'>
-                  <div>
-                    <h3>Срок</h3>
-                    <span></span>
-                  </div>
-                  <button type='button' class='go-button'>Заказать</button>
-                </div>
-              </div>
-            </li>
-          </template>
-          <p class='prices__notes'>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-          <a href='#' aria-label='Получить коммерческое предложение' class='go-link prices__go-link'>Получить коммерческое предложение</a>
-        </section>
-      </main>
-      <footer class='page-footer'>
-        <p>© 2019 CPS<br>Разработано командой Apesong </p>
-        <p>Политика конфиденциальности</p>
-        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
-      </footer>
-    </div>
-    <div class='blur-overlay'></div>
-    <div class='modal-form'>
-      <button type="button" aria-label="Закрыть меню" class="navigation-button close-button">
-        <img src="img/close.png" alt="Закрыть меню">
-      </button>
-      <h2 class="page-title">Обратная связь</h2>
-      <form action='/feedback'>
-        <input type="text" placeholder="Имя" id='feedback-form-name-field'>
-        <label for="feedback-form-name-field" class='visually-hidden'>Введите имя</label>
-        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" id='feedback-form-phone-field'>
-        <label for="feedback-form-phone-field" class='visually-hidden'>Введите телефон</label>
-        <input type="email" placeholder="Электронная почта" id='feedback-form-email-field'>
-        <label for="feedback-form-email-field" class='visually-hidden'>Введите электронную почту</label>
-        <textarea rows="5" cols="60" name="text" placeholder="Сообщение" id='feedback-form-message-field'></textarea>
-        <label for="feedback-form-message-field" class='visually-hidden'>Напишите сообщение</label>
-      </form>
-      <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
-      <button type='button' class='go-button'>Отправить</button>
-    </div>
-    <div class='modal-form'>
-      <button type="button" aria-label="Закрыть меню" class="navigation-button close-button">
-        <img src="img/close.png" alt="Закрыть меню">
-      </button>
-      <h2 class="page-title">Заказать звонок</h2>
-      <form action='/callme'>
-        <input type="tel" name="tel" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" id='call-me-form-phone-field'>
-        <label for="call-me-form-phone-field" class='visually-hidden'>Введите номер телефона</label>
-      </form>
-      <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a href='#'>политикой конфиденциальности</a></p>
-      <button type='button' class='go-button'>Отправить</button>
     </div>
   </div>
-  </body>
+  <div>
+    <header class='page-header'>
+      <nav class='page-header__navigation'>
+        <ul class='page-header__navigation-list'>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Открыть меню' href='#' class='page-header__navigation-list-link'>
+              <img src='img/burger.png' alt='Меню'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-divider page-header__navigation-list-item'></li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Перейти на главную' href='#' class='page-header__navigation-list-link'>
+              <img src='img/logo.svg' alt='Логотип'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Позвонить' href='#' class='page-header__navigation-list-link'>
+              <img src='img/call.png' alt='Позвонить'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Открыть чат' href='#' class='page-header__navigation-list-link'>
+              <img src='img/chat.png' alt='Чат'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Открыть страницу профиля' href='#' class='page-header__navigation-list-link'>
+              <img src='img/profile.png' alt='Профиль'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-divider page-header__navigation-list-item'></li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Оставить заявку' href='#' class='page-header__navigation-list-link'>
+              <span>Оставить заявку</span>
+              <img src='img/repair.png' alt='Оставить заявку'>
+            </a>
+          </li>
+          <li class='page-header__navigation-list-item'>
+            <a aria-label='Узнать статус ремонта' href='#' class='page-header__navigation-list-link'>
+              <span>Статус ремонта</span>
+              <img src='img/status.png' alt='Статус ремонта'>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class='page-title'>Услуги и сервисы</h1>
+    </header>
+    <main class='main-block'>
+      <nav class='slide-menu main-block__slider'>
+        <div class='slide-menu__list'>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_1' checked>
+            <label for='input_radio_1'>Ремонтируемые устройства</label>
+          </div>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_2'>
+            <label for='input_radio_2'>Дополнительные услуги</label>
+          </div>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_3'>
+            <label for='input_radio_3'>Цены на услуги</label>
+          </div>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_4'>
+            <label for='input_radio_4'>Адреса сервисных центров</label>
+          </div>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_5'>
+            <label for='input_radio_5'>Специальные цены</label>
+          </div>
+          <div class='slide-menu__item'>
+            <input type='radio' name='slide-menu-choose' id='input_radio_6'>
+            <label for='input_radio_6'>Отзывы</label>
+          </div>
+        </div>
+      </nav>
+      <section class='article-preview'>
+        <article class='article-preview__short-content'>
+          <div class='article-preview__description'>
+            <p>
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+              отремонтировать
+              свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+              количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+              нас
+              родным и близким.
+            </p>
+          </div>
+          <a aria-label='Читать далее' href='#' class='article-preview__full-link'>Читать далее</a>
+        </article>
+        <img class='article-preview__illustration' src='img/_MG_3223.jpg' alt='Фотография офиса' />
+      </section>
+      <section class='services'>
+        <h2 class='section-title'>Ремонт техники различных брендов</h2>
+        <div class='services__list-wrapper'>
+          <ul class='services__list'>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/lenovo.png' alt='Lenovo' />
+                <a aria-label='Открыть Lenovo' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/samsung.png' alt='Samsung' />
+                <a aria-label='Открыть Samsung' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/apple.png' alt='Apple' />
+                <a aria-label='Открыть Apple' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/viewsonic.png' alt='Lenovo' />
+                <a aria-label='Открыть ViewSonic' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/bosch.png' alt='Bosch' />
+                <a aria-label='Открыть Bosch' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/hp.png' alt='HP' />
+                <a aria-label='Открыть HP' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/acer.png' alt='Acer' />
+                <a aria-label='Открыть Acer' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/sony.png' alt='Sony' />
+                <a aria-label='Открыть Sony' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/lenovo.png' alt='Lenovo' />
+                <a aria-label='Открыть Lenovo' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/samsung.png' alt='Samsung' />
+                <a aria-label='Открыть Samsung' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='brand-link'>
+                <img src='img/logos/apple.png' alt='Apple' />
+                <a aria-label='Открыть Apple' href='#'></a>
+              </div>
+            </li>
+          </ul>
+          <label class='services__list-expander'>
+            <input type='checkbox' class='visually-hidden'>
+            <span></span>
+            Показать все
+          </label>
+          <div class='swiper-pagination'></div>
+        </div>
+      </section>
+      <section class='services'>
+        <h2 class='section-title'>Ремонт различных видов техники</h2>
+        <div class='services__list-wrapper'>
+          <ul class='services__list'>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт ноутбуков</h3>
+                <a aria-label='Открыть ремонт ноутбуков' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт планшетов</h3>
+                <a aria-label='Открыть ремонт планшетов' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт ПК</h3>
+                <a aria-label='Открыть ремонт ПК' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт мониторов</h3>
+                <a aria-label='Открыть ремонт мониторов' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт смартфонов</h3>
+                <a aria-label='Открыть ремонт смартфонов' href='#'></a>
+              </div>
+            </li>
+            <li class='services__list-slide'>
+              <div class='repairment-link'>
+                <h3>Ремонт телевизоров</h3>
+                <a aria-label='Открыть ремонт телевизоров' href='#'></a>
+              </div>
+            </li>
+          </ul>
+          <label class='services__list-expander'>
+            <input type='checkbox' class='visually-hidden'>
+            <span></span>
+            Показать все
+          </label>
+          <div class='swiper-pagination'></div>
+        </div>
+      </section>
+      <section class='prices'>
+        <h2 class='section-title'>Цены на услуги</h2>
+        <table class='prices__table'>
+          <thead>
+          <tr>
+            <th class='prices__table-header'>Ремонтные услуги</th>
+            <th class='prices__table-header'>Цена</th>
+            <th class='prices__table-header'>Срок</th>
+            <th class='prices__table-header'></th>
+          </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <template id='prices__table-row-template'>
+          <tr class='prices__table-row'>
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'></td>
+            <td class='prices__table-cell'>
+              <button type='button' class='go-button'>Заказать</button>
+            </td>
+          </tr>
+        </template>
+        <div class='prices__list-wrapper swiper'>
+          <ul class='prices__list swiper-wrapper'>
+
+          </ul>
+          <div class='swiper-pagination'></div>
+        </div>
+        <template id='prices__list-slide-template'>
+          <li class='prices__list-slide swiper-slide'>
+            <div class='price-item'>
+              <div>
+                <h3>Ремонтные услуги</h3>
+                <span></span>
+              </div>
+              <div>
+                <h3>Цена</h3>
+                <span></span>
+              </div>
+              <div class='price-item__footer'>
+                <div>
+                  <h3>Срок</h3>
+                  <span></span>
+                </div>
+                <button type='button' class='go-button'>Заказать</button>
+              </div>
+            </div>
+          </li>
+        </template>
+        <p class='prices__notes'>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
+          получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+        <a href='#' aria-label='Получить коммерческое предложение' class='go-link prices__go-link'>Получить коммерческое
+          предложение</a>
+      </section>
+    </main>
+    <footer class='page-footer'>
+      <p>© 2019 CPS<br>Разработано командой Apesong </p>
+      <p>Политика конфиденциальности</p>
+      <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+    </footer>
+  </div>
+  <div class='blur-overlay'></div>
+  <div class='modal-form'>
+    <button type='button' aria-label='Закрыть меню' class='navigation-button close-button'>
+      <img src='img/close.png' alt='Закрыть меню'>
+    </button>
+    <h2 class='page-title'>Обратная связь</h2>
+    <form action='/feedback'>
+      <input type='text' placeholder='Имя' id='feedback-form-name-field'>
+      <label for='feedback-form-name-field' class='visually-hidden'>Введите имя</label>
+      <input type='tel' name='tel' required pattern='[0-9]{1}-[0-9]{3}-[0-9]{3}' placeholder='Телефон'
+             id='feedback-form-phone-field'>
+      <label for='feedback-form-phone-field' class='visually-hidden'>Введите телефон</label>
+      <input type='email' placeholder='Электронная почта' id='feedback-form-email-field'>
+      <label for='feedback-form-email-field' class='visually-hidden'>Введите электронную почту</label>
+      <textarea rows='5' cols='60' name='text' placeholder='Сообщение' id='feedback-form-message-field'></textarea>
+      <label for='feedback-form-message-field' class='visually-hidden'>Напишите сообщение</label>
+    </form>
+    <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a
+      href='#'>политикой конфиденциальности</a></p>
+    <button type='button' class='go-button'>Отправить</button>
+  </div>
+  <div class='modal-form'>
+    <button type='button' aria-label='Закрыть меню' class='navigation-button close-button'>
+      <img src='img/close.png' alt='Закрыть меню'>
+    </button>
+    <h2 class='page-title'>Заказать звонок</h2>
+    <form action='/callme'>
+      <input type='tel' name='tel' required pattern='[0-9]{1}-[0-9]{3}-[0-9]{3}' placeholder='Телефон'
+             id='call-me-form-phone-field'>
+      <label for='call-me-form-phone-field' class='visually-hidden'>Введите номер телефона</label>
+    </form>
+    <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a
+      href='#'>политикой конфиденциальности</a></p>
+    <button type='button' class='go-button'>Отправить</button>
+  </div>
+</div>
+</body>
 </html>
