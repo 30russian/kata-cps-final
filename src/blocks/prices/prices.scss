@@ -94,3 +94,33 @@
   margin: 0;
   list-style-type: none;
 }
+
+.prices__notes {
+  max-width: 420px;
+  font-family: "TT Lakes Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  margin: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 24px;
+  }
+
+  @media (min-width: $pc) {
+    margin: 32px;
+  }
+}
+
+.prices__go-link {
+  margin: 0 8px 0 8px;
+
+  @media (min-width: $tablet) {
+    margin: 0 16px 0 16px;
+  }
+
+  @media (min-width: $pc) {
+    margin: 0 24px 0 24px;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../scss/variables";
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 16px 0 16px;
+  p {
+    text-align: center;
+    font-family: 'TT Lakes Regular', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 24px 0 24px;
+    p:nth-child(1) {
+      text-align: start;
+    }
+    p:nth-child(2) {
+      text-align: center;
+    }
+    p:nth-child(3) {
+      text-align: end;
+    }
+  }
+
+  @media (min-width: $pc) {
+    padding: 0 32px 0 32px;
+  }
+}

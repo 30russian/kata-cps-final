@@ -1,0 +1,21 @@
+.go-link {
+  width: max-content;
+  font-family: "TTLakes-Medium", sans-serif;
+  font-size: 16px;
+  text-decoration-line: none;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  position: relative;
+  padding: 8px 30px 8px 8px;
+
+  &::after {
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    content: "";
+    background: no-repeat  url("img/go-link.png");
+    top: 11px;
+    margin-left: 10px;
+  }
+}

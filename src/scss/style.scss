@@ -17,6 +17,8 @@
 @import "src/blocks/navigation-link/navigation-link";
 @import "src/blocks/modal-form/modal-form";
 @import "src/blocks/blur-overlay/blur-overlay";
+@import "src/blocks/go-link/go-link";
+@import "src/blocks/page-footer/page-footer";
 @import "variables";
 @import "swiper";
 
@@ -73,6 +75,18 @@ body {
 
   @media (min-width: $pc) {
     grid-template-columns: auto minmax($pc - $sidebarWidth, auto);
+  }
+}
+
+.page-footer {
+  margin: 40px 0 16px 0;
+
+  @media (min-width: $tablet) {
+    margin: 40px 0 24px 0;
+  }
+
+  @media (min-width: $pc) {
+    margin: 80px 0 32px 0;
   }
 }
 
