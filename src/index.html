@@ -407,7 +407,7 @@
       <img src='img/close.png' alt='Закрыть меню'>
     </button>
     <h2 class='page-title'>Обратная связь</h2>
-    <form action='/feedback'>
+    <form action='/feedback' id='feedback-form'>
       <input type='text' placeholder='Имя' id='feedback-form-name-field'>
       <label for='feedback-form-name-field' class='visually-hidden'>Введите имя</label>
       <input type='tel' name='tel' required pattern='[0-9]{1}-[0-9]{3}-[0-9]{3}' placeholder='Телефон'
@@ -420,21 +420,21 @@
     </form>
     <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a
       href='#'>политикой конфиденциальности</a></p>
-    <button type='button' class='go-button'>Отправить</button>
+    <button type='submit' form='feedback-form' class='go-button'>Отправить</button>
   </div>
   <div class='modal-form'>
     <button type='button' aria-label='Закрыть меню' class='navigation-button close-button'>
       <img src='img/close.png' alt='Закрыть меню'>
     </button>
     <h2 class='page-title'>Заказать звонок</h2>
-    <form action='/callme'>
+    <form action='/callme' id='callme-form'>
       <input type='tel' name='tel' required pattern='[0-9]{1}-[0-9]{3}-[0-9]{3}' placeholder='Телефон'
              id='call-me-form-phone-field'>
       <label for='call-me-form-phone-field' class='visually-hidden'>Введите номер телефона</label>
     </form>
     <p>Нажимая “отправить”, вы даете согласие на <a href='#'>обработку персональных данных</a> и соглашаетесь с нашей <a
       href='#'>политикой конфиденциальности</a></p>
-    <button type='button' class='go-button'>Отправить</button>
+    <button type='submit' form='callme-form' class='go-button'>Отправить</button>
   </div>
 </div>
 </body>

@@ -45,6 +45,10 @@
   @media (min-width: $tablet) {
     height: 100vh;
   }
+
+  @media (min-width: $pc) {
+    position: fixed;
+  }
 }
 
 .sidebar__navigation {

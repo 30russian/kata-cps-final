@@ -27,6 +27,9 @@ export function addOpener(openerElem, modalForm) {
   openerElem.addEventListener('click', () => {
     if (!modalFormOpened) {
       modalForm.classList.add('modal-form--opened');
+      window.setTimeout(() =>{
+        modalForm.querySelector('form input:first-child').focus();
+      }, 100);
       onChangeStateListener(true);
       modalFormOpened = true;
     }
